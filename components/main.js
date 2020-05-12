@@ -1,5 +1,9 @@
+import Tree from './tree.js';
+
+// O parent e o pai, se o parent estiver null, quer dizer que ele não tem pai
 const menu = [
   { id: 1, name: "Desktops", parent: 3 },
+  // O pai dele e o de id numero '3'
   { id: 3, name: "Computers", parent: 8 },
   { id: 4, name: "Smartphones", parent: 6 },
   { id: 6, name: "Portables", parent: 3 },
@@ -11,3 +15,6 @@ const menu = [
   { id: 13, name: "Remotes", parent: 14 },
   { id: 14, name: "Accessories", parent: 10 }
 ]
+
+Tree(menu);
+// Estamos passando esse menu la pra dentro do tree.js
